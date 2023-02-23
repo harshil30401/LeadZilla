@@ -1,6 +1,6 @@
 # LeadZilla
 
-This is a chrome extension that sends a connection invite to the people in your current page. 
+LinkedIn SmartConnect is a Chrome extension that streamlines the process of sending connection requests on LinkedIn. Simply search for people you want to connect with, and LinkedIn SmartConnect will automatically send connection requests with a message. Save time and connect with more people using LinkedIn SmartConnect!
 
 Steps to use LinkedIn SmartConnect: 
   1. Clone this repository using git clone "https://github.com/harshil30401/LeadZilla.git"
