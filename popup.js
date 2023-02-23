@@ -11,6 +11,10 @@ startBtn.addEventListener("click", async () => {
             let tab = tabs[0];
             chrome.scripting.executeScript({
                 target: { tabId: tab.id },
+
+
+                // This function will interact with the HTML page of linkedIn.
+
                 function: startConnecting,
             });
 
@@ -27,6 +31,17 @@ startBtn.addEventListener("click", async () => {
 stopBtn.addEventListener("click", () => {
     clearInterval(intervalId);
 });
+
+/* 
+    1. Here we will find all the 'Connect' buttons in the page and store it in an array.
+    2. Next, we will click each the button one at a time by using a for loop. 
+    3. As linkedIn recommends you to add an additional note to the connection request, we will handle that case by adding a short conenction note.
+    4. In that case, we need to wait until the HTML elements of the page loads for fetching the exact class name of the note and the send button.
+    5. Then we add our short note and send the request.
+    6. This process starts when the user clicks on the 'Send Requests' button.
+    7. This process will repeat until the user clicks on the 'Stop' button OR the array of all the buttons have been clicked.
+
+*/
 
 function startConnecting() {
     var x = document.getElementsByClassName('artdeco-button__text');
