@@ -2,7 +2,7 @@
 
 This is a chrome extension that sends a connection invite to the people in your current page. 
 
-Installation: 
+Steps to use this extension: 
   1. Clone this repository using git clone "https://github.com/harshil30401/LeadZilla.git"
   2. Open your chrome and search for chrome://extensions/
   3. Enable Developer mode
