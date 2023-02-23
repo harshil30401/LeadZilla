@@ -1,0 +1,16 @@
+{
+    "name": "LinkedIn SmartConnect",
+    "description": "LinkedIn SmartConnect is a Chrome extension that streamlines the process of sending connection requests on LinkedIn. Simply search for people you want to connect with, and LinkedIn SmartConnect will automatically send connection requests with an optional personalized message. Save time and connect with more people using LinkedIn SmartConnect!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "images/linkedin.png"
+    }
+}
